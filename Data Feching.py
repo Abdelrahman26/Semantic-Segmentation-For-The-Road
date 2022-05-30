@@ -1,5 +1,5 @@
 import os
-
+import torch
 
 # Fetching data from directory folders and store it in lists
 data_dir = os.path.join("/kaggle", "input", "cityscapes-image-pairs", "cityscapes_data")
@@ -18,6 +18,17 @@ def length_of_data_lst(data_lst):
 def get_img_id(data, idx):
     return data[idx]
 
+
+def check_device():
+    torch.cuda.empty_cache()
+    if torch.cuda.is_available():
+        print("GPU available")
+        device = "cuda:0"
+    else:
+        print("CPU available")
+        device = "cpu"
+
+    return torch.device(device)
 
 
 
