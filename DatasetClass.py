@@ -1,5 +1,5 @@
 import os
-import Preprocessing as pre
+import Helper as pre
 from PIL import Image
 import numpy as np
 import torch
@@ -27,7 +27,7 @@ class Cityscape_dataset(Dataset):
         return cityscape, label_class
 
     def split_image(self, img):
-        image = np.array(image)
+        image = np.array(img)
         cityscape, label = image[:, :256, :], image[:, 256:, :]
         return cityscape, label
 
