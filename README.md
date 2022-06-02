@@ -1,9 +1,16 @@
 # Semantic-Segmentation-For-The-Road
 
 # The Goal
-*how to make the car able to segment all objects of
+*How to make vechile able to segment all objects of
 the scene and classify each pixel to the suitable class*
-jnjnj
-[![alt text][2]][1]
-[1]: http://www.google.com/
-[2]: https://drive.google.com/file/d/1jnZA9b_0QAmIidUh8zljgWthF44Ir1FB/view?usp=sharing
+
+# Dataset
+
+- *collection of recorded videos of vehicles driven in Germany in
+different seasons and different times of the day*
+- *it has 2975 training images files and 500 validation image files*
+- *The depth of entities in the scene are also included in this dataset* 
+
+
+
+
