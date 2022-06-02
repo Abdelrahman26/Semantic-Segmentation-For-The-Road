@@ -76,3 +76,6 @@ percept overlap between the target mask and our prediction output
 * The IoU metric measures the number of pixels common between the target and
 prediction masks divided by the total number of pixels present across both masks
 
+## Results 
+After Training of 240 epochs and using IoU score to evaluate, we
+finally have achieved accuracy higher than 98%
