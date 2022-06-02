@@ -32,11 +32,11 @@ with deep learning frameworks format*
 
 # Network Architecture
 * Fully Convolutional Neural Networks
-- The output shape of the network equals the input shape of the
+  - The output shape of the network equals the input shape of the
 network, we have to use FCNN rather than the normal CNN, because in CNN the
 architecture has fully connected layers in the last layersand this idea is not suitable for
 this step, where we want the desired output includes **localization**
-- The output has c channels, each pixel in this channel represents the probability of
+  - The output has c channels, each pixel in this channel represents the probability of
 belonging to this class channel
 
 
