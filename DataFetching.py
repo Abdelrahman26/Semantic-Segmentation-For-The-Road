@@ -22,14 +22,8 @@ def get_img_id(data, idx):
 def check_device():
     torch.cuda.empty_cache()
     if torch.cuda.is_available():
-        print("GPU available")
         device = "cuda:0"
     else:
-        print("CPU available")
         device = "cpu"
 
-    return torch.device(device)
-
-
-
-
+    return device
