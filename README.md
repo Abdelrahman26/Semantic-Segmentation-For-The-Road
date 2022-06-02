@@ -31,7 +31,7 @@ part and the second has to add to the label part*
 with deep learning frameworks format*
 
 # Network Architecture
-* Fully Convolutional Neural Networks
+* **Fully Convolutional Neural Networks**
   - The output shape of the network equals the input shape of the
 network, we have to use FCNN rather than the normal CNN, because in CNN the
 architecture has fully connected layers in the last layersand this idea is not suitable for
@@ -39,7 +39,7 @@ this step, where we want the desired output includes **localization**
   - The output has c channels, each pixel in this channel represents the probability of
 belonging to this class channel
 
-* U-Net Architecture 
+* **U-Net Architecture** 
   - used a modified version from the U-Net paper
   - The architecture consists of **a contracting** path to capture context and a symmetric
 **expanding** path that enables precise localiza-tion.
@@ -68,4 +68,11 @@ convolution. At the last layer a 1x1 convolution is used to map each 64-componen
 feature vector to the desired number of classes. In total the network has 23
 convolutional layers.
 
+
+# Accuracy
+## Intersection Over Union
+* The Intersection over Union (IoU) metric, is essentially a method to quantify the
+percept overlap between the target mask and our prediction output
+* The IoU metric measures the number of pixels common between the target and
+prediction masks divided by the total number of pixels present across both masks
 
